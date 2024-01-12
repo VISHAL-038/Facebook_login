@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
+
+            .container {
+                background-color: #fff;
+                /* padding: 20px; */
+                border-radius: 8px; 
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                display: grid;
+                grid-template-columns: auto auto ;
+                gap: 15px;
+            }
+
+            .child-one{
+                background-color: #f4f4f4;
+                padding: 20px;
+            }
+
+            .child-two{
+                padding: 20px;
+            }
+
+            
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            input {
+                width: 300px;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .login {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .login:hover {
+                background-color: #0056b3;
+            }
+
+            a{
+                text-align: center;
+                font-size: small;
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration:underline;
+            }
+            
+
+            .create{
+                background-color: green;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .create:hover {
+                background-color: darkgreen;
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-one">
+            <h1 style="color: #007bff;">facebook</h1>
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div class="child-two">
+            <form action="" >
+                <h3 style="text-align: center;">Login to Facebook</h3>
+                <input type="text" id="username" name="username" placeholder="Email address or phone number" required>
+
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                
+                <button type="submit" class="login">Log in</button>
+
+                <br>
+                <a href="">Forgotten password?</a>
+                <hr>
+                
+                
+            </form>
+            <form action=""><button type="smbit" class="create">Create new account</button></form>
+
+            <p><a href="" style="font-size: medium;">Create a Page</a> for a celebrity, brand or business.</p>
+        </div>
+    </div>
+</body>
+</html>
